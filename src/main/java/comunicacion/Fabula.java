@@ -31,6 +31,11 @@ public String interpretacion() {
 	return interpretacion;
 }
 public String toString() {
-	
+	String mensaje = super.getOrigen() + "\n"; 
+	mensaje += super.getTitulo() + "\n";
+	mensaje += super.getAutor() + "\n"; 
+	mensaje += super.getPaginas() + "\n";
+	mensaje += this.ensenanza + "\n";
+	return mensaje;
 }
 }

@@ -20,6 +20,15 @@ public class Alfabeto extends Pictograma {
 		return interpretacion;
 	}
 	public String toString() {
-		
+		String mensaje = "";
+		for (int i=0; i<Alfabeto.letras.length;i++) {
+			if (i< Alfabeto.letras.length-1) {
+				mensaje += Alfabeto.letras[i] + ", ";
+			}
+			else {
+				mensaje += Alfabeto.letras[i];
+			}
+		}
+		return mensaje;
 	}
 }

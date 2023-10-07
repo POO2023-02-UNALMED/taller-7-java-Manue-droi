@@ -5,7 +5,7 @@ public class Periodico extends Escrito{
 	private String primicia;
 	private String interpretacion;
 	
-	public Periodico(String fecha, String primicia, String interpretacion, String origen, String titulo, String autor, int paginas) {
+	public Periodico(String fecha, String primicia, String interpretacion, int paginas, String origen, String titulo, String autor) {
 	super(origen, titulo, autor,  paginas);
 	this.fecha = fecha;
 	this.primicia = primicia;

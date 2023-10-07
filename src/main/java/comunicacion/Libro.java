@@ -47,13 +47,13 @@ public class Libro extends Escrito {
 		return interpretacion;
 	}
 	public String toString() {
-		String mensaje = super.getOrigen() + "\n" ;
-			mensaje += super.getTitulo() + "\n";
-			mensaje += super.getAutor() + "\n";
-			mensaje += super.getPaginas() + "\n";
-			mensaje += this.co_autor + "\n";
-			mensaje += this.editorial + "\n";
-			mensaje += this.edicion + "\n";
-			return mensaje;
+		String mensaje = super.getOrigen() + "\n";
+		mensaje += super.getTitulo() + "\n";
+		mensaje += super.getAutor() + "\n";
+		mensaje += super.getPaginas() + "\n";
+		mensaje += this.co_autor + "\n";
+		mensaje += this.editorial + "\n";
+		mensaje += this.edicion;
+		return mensaje;
 	}
 }

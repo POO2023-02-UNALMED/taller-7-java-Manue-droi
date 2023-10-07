@@ -23,8 +23,9 @@ public void setInterpretacion(String interpretacion) {
 	this.interpretacion = interpretacion;
 }
 	
-public int palabrasTotales(int palabras) {
-	this.palabrasTotales = palabras;
+public int palabrasTotales(int palabrasTotales) {
+	int resultado = super.getPaginas() * palabrasTotales * 1;
+	return resultado;
 }
 public String interpretacion() {
 	return interpretacion;

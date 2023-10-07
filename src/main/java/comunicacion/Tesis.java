@@ -48,6 +48,14 @@ public class Tesis extends Escrito {
 		return interpretacion;
 	}
 	public String toString() {
-		
+		String mensaje = super.getOrigen() + "\n"; 
+		mensaje += super.getTitulo() + "\n";
+		mensaje += super.getAutor() + "\n"; 
+		mensaje += super.getPaginas() + "\n";
+		mensaje += this.idea + "\n";
+		mensaje += Tesis.argumentos.length + "\n";
+		mensaje += this.conclusion + "\n";
+		mensaje += this.referencia;
+		return mensaje;
 	}
 }

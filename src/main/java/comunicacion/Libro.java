@@ -40,13 +40,21 @@ public class Libro extends Escrito {
 	}
 	
 	public int palabrasTotales(int palabrasTotales) {
-		  return palabras;
+		int resultado = super.getPaginas() * palabrasTotales * 2;
+		return resultado;
 	}
 	public String interpretacion() {
 		return interpretacion;
 	}
 	public String toString() {
-		
+		String mensaje = super.getOrigen() + "\n"; 
+		mensaje += super.getTitulo() + "\n";
+		mensaje += super.getAutor() + "\n"; 
+		mensaje += super.getPaginas() + "\n";
+		mensaje += this.co_autor + "\n";
+		mensaje += this.editorial + "\n";
+		mensaje += this.edicion + "\n";
+		return mensaje;
 	}
 	
 	

@@ -54,7 +54,7 @@ public class Tesis extends Escrito {
 		return interpretacion;
 	}
 	public String toString() {
-		String mensaje = super.getOrigen() + "\n" +
+		return super.getOrigen() + "\n" +
 		 super.getTitulo() + "\n"+
 		 super.getAutor() + "\n" +
 		 super.getPaginas() + "\n"+
@@ -62,6 +62,6 @@ public class Tesis extends Escrito {
 		 Tesis.argumentos.length + "\n"+
 		 this.conclusion + "\n"+
 		 this.referencia;
-		return mensaje;
+		
 	}
 }

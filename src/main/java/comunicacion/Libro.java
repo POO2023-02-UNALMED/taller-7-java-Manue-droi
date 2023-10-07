@@ -47,20 +47,12 @@ public class Libro extends Escrito {
 		return interpretacion;
 	}
 	public String toString() {
-		String mensaje = super.getOrigen() + "\n"+ 
+		return super.getOrigen() + "\n"+ 
 		super.getTitulo() + "\n"+
 		super.getAutor() + "\n"+
 		super.getPaginas() + "\n"+
 		this.co_autor + "\n"+
 		this.editorial + "\n"+
 		this.edicion + "\n";
-		return mensaje;
 	}
-	
-	
-	
-	
-	
-	
-
 }

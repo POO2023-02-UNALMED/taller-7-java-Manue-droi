@@ -39,12 +39,12 @@ public class Periodico extends Escrito{
 		return interpretacion;
 	}
 	public String toString() {	
-		return super.getOrigen() + "\n"+
-		 super.getTitulo() + "\n"+
-		 super.getAutor() + "\n"+
-		 super.getPaginas() + "\n"+
-		 this.fecha + "\n"+
-		 this.primicia + "\n";
-		
+		String mensaje = super.getOrigen() + "\n";
+				mensaje +=super.getTitulo() + "\n";
+				mensaje +=super.getAutor() + "\n";
+				mensaje +=super.getPaginas() + "\n";
+				mensaje +=this.fecha + "\n";
+				mensaje +=this.primicia + "\n";
+		return mensaje;
 	}
 }
